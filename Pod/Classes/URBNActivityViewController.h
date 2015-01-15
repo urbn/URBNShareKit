@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "URBNShareKit.h"
+
+@class URBNImageProvider;
+@class URBNBodyProvider;
+@class URBNUrlProvider;
 
 @interface URBNActivityViewController : UIActivityViewController
+
+@property (nonatomic, strong) URBNBodyProvider *bodyProvider;
+@property (nonatomic, strong) URBNImageProvider *imageProvider;
+@property (nonatomic, strong) URBNUrlProvider *urlProvider;
 
 @end

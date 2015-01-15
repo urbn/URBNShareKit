@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface URBNCopyProvider : UIActivityItemProvider
+@interface URBNBodyProvider : UIActivityItemProvider
+
+@property (nonatomic, strong) NSString *defaultBody;
+@property (nonatomic, strong) NSString *emailBody;
+@property (nonatomic, strong) NSString *textMessageBody;
+@property (nonatomic, strong) NSString *twitterBody;
+@property (nonatomic, strong) NSString *facebookBody;
+@property (nonatomic, strong) NSString *pinterestBody;
+@property (nonatomic, strong) NSString *pasteboardBody;
 
 @end

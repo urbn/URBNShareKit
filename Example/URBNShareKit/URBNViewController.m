@@ -24,6 +24,7 @@
 #pragma mark - Actions
 - (IBAction)shareButtonTouch:(id)sender {
     URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] init];
+    urbnActivityController.bodyProvider.defaultBody = @"";
 }
 
 @end

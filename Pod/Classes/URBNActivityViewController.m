@@ -14,24 +14,18 @@
 
 @implementation URBNActivityViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+#pragma mark - Initilization
+- (instancetype)init {
+    URBNBodyProvider *bodyProvider = [URBNBodyProvider new];
+    URBNUrlProvider *urlProvider = [URBNUrlProvider new];
+    URBNImageProvider *imageProvider = [URBNImageProvider new];
+    self = [super initWithActivityItems:@[bodyProvider, urlProvider, imageProvider] applicationActivities:nil];
+    if (self) {
+        self.bodyProvider = bodyProvider;
+        self.urlProvider = urlProvider;
+        self.imageProvider = imageProvider;
+    }
+    return self;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

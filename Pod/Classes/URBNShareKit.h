@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "URBNActivityViewController.h"
+#import "URBNBodyProvider.h"
+#import "URBNImageProvider.h"
+#import "URBNUrlProvider.h"
 
 @interface URBNShareKit : NSObject
 
