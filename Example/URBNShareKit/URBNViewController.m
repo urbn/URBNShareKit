@@ -37,6 +37,8 @@
     urbnActivityController.imageProvider.activityTypesToDisplayImage = @[UIActivityTypeMail];
     urbnActivityController.imageProvider.image = [UIImage imageNamed:@"ron-swanson"];
     
+    urbnActivityController.urlProvider.url = [NSURL URLWithString:@"http://www.google.com"];
+    
     [self showViewController:urbnActivityController sender:self];
 }
 

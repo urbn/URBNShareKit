@@ -10,4 +10,7 @@
 
 @interface URBNUrlProvider : UIActivityItemProvider
 
+@property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) NSArray *activityTypesToDisplayUrl;
+
 @end
