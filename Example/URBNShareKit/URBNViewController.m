@@ -7,23 +7,23 @@
 //
 
 #import "URBNViewController.h"
+#import <URBNShareKit/URBNShareKit.h>
 
 @interface URBNViewController ()
+
+@property (strong, nonatomic) IBOutlet UIButton *shareButton;
 
 @end
 
 @implementation URBNViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Actions
+- (IBAction)shareButtonTouch:(id)sender {
+    URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] init];
 }
 
 @end
