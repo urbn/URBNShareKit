@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Ryan Garchinsky. All rights reserved.
 //
 
-#import "URBNViewController.h"
+#import "URBNShareKitExampleVC.h"
 #import <URBNShareKit/URBNShareKit.h>
 
-@interface URBNViewController ()
+@interface URBNShareKitExampleVC ()
 
 @property (strong, nonatomic) IBOutlet UIButton *shareButton;
 
 @end
 
-@implementation URBNViewController
+@implementation URBNShareKitExampleVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

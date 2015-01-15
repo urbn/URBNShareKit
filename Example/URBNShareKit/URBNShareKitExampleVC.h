@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface URBNViewController : UIViewController
+@interface URBNShareKitExampleVC : UIViewController
 
 @end
