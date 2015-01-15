@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "11-reasons-ron-swanson-is-my-perfect-man-1-20397-1374468746-0_big-1.jpg"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "11-reasons-ron-swanson-is-my-perfect-man-1-20397-1374468746-0_big.jpg"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "11-reasons-ron-swanson-is-my-perfect-man-1-20397-1374468746-0_big-2.jpg"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

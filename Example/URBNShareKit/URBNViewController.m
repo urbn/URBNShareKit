@@ -34,6 +34,9 @@
     urbnActivityController.bodyProvider.textMessageBody = @"This is a great text message";
     urbnActivityController.bodyProvider.pinterestBody = @"Pinning this to my board";
     
+    urbnActivityController.imageProvider.activityTypesToDisplayImage = @[UIActivityTypeMail];
+    urbnActivityController.imageProvider.image = [UIImage imageNamed:@"ron-swanson"];
+    
     [self showViewController:urbnActivityController sender:self];
 }
 
