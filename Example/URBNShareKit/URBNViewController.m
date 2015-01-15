@@ -24,9 +24,16 @@
 #pragma mark - Actions
 - (IBAction)shareButtonTouch:(id)sender {
     URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] init];
-    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail]];
-    urbnActivityController.bodyProvider.defaultBody = @"whoohoo!";
-    urbnActivityController.bodyProvider.emailSubject = @"subject";
+    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kActivityTypePinterest]];
+    
+    urbnActivityController.bodyProvider.emailSubject = @"My E-Mail Subject";
+    urbnActivityController.bodyProvider.emailBody = @"<html>The body of my e-mail which can contain <b>HTML <i>tags</i></b></html>";
+    urbnActivityController.bodyProvider.pasteboardBody = @"This was sent to my pasteboard";
+    urbnActivityController.bodyProvider.facebookBody = @"Check out my Facebook post";
+    urbnActivityController.bodyProvider.twitterBody = @"Tweet tweet";
+    urbnActivityController.bodyProvider.textMessageBody = @"This is a great text message";
+    urbnActivityController.bodyProvider.pinterestBody = @"Pinning this to my board";
+    
     [self showViewController:urbnActivityController sender:self];
 }
 
