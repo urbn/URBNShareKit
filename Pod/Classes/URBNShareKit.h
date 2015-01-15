@@ -12,6 +12,8 @@
 #import "URBNImageProvider.h"
 #import "URBNUrlProvider.h"
 
+extern NSString *const kActivityTypePinterest;
+
 @interface URBNShareKit : NSObject
 
 @end

@@ -18,5 +18,8 @@
 @property (nonatomic, strong) URBNBodyProvider *bodyProvider;
 @property (nonatomic, strong) URBNImageProvider *imageProvider;
 @property (nonatomic, strong) URBNUrlProvider *urlProvider;
+@property (nonatomic, strong) NSArray *includedActivityTypes;
+
+- (void)setIncludedActivityTypes:(NSArray *)includedActivityTypesArray;
 
 @end

@@ -7,8 +7,7 @@
 //
 
 #import "URBNBodyProvider.h"
-
-static NSString *const kActivityTypePinterest = @"pinterest.ShareExtension";
+#import "URBNShareKit.h"
 
 @implementation URBNBodyProvider
 
@@ -41,6 +40,14 @@ static NSString *const kActivityTypePinterest = @"pinterest.ShareExtension";
         }
     }
     return nil;
+}
+
+- (id)activityViewControllerPlaceholderItem:(UIActivityViewController *)activityViewController {
+    return [NSString string];
+}
+
+- (NSString *)activityViewController:(UIActivityViewController *)activityViewController subjectForActivityType:(NSString *)activityType {
+    return self.emailSubject;
 }
 
 @end

@@ -28,4 +28,28 @@
     return self;
 }
 
+- (void)setIncludedActivityTypes:(NSArray *)includedActivityTypesArray {
+    NSArray *activityTypesArray = @[UIActivityTypePostToFacebook,
+                               UIActivityTypePostToTwitter,
+                               UIActivityTypePostToWeibo,
+                               UIActivityTypeMessage,
+                               UIActivityTypeMail,
+                               UIActivityTypePrint,
+                               UIActivityTypeCopyToPasteboard,
+                               UIActivityTypeAssignToContact,
+                               UIActivityTypeSaveToCameraRoll,
+                               UIActivityTypeAddToReadingList,
+                               UIActivityTypePostToFlickr,
+                               UIActivityTypePostToVimeo,
+                               UIActivityTypePostToTencentWeibo,
+                               UIActivityTypeAirDrop,
+                               kActivityTypePinterest];
+    
+    NSMutableSet *typesSet = [NSMutableSet setWithArray:activityTypesArray];
+    NSMutableSet *includedTypesSet = [NSMutableSet setWithArray:includedActivityTypesArray];
+    [typesSet minusSet:includedTypesSet];
+    
+    self.excludedActivityTypes = typesSet.allObjects;
+}
+
 @end

@@ -8,6 +8,8 @@
 
 #import "URBNShareKit.h"
 
+NSString *const kActivityTypePinterest = @"pinterest.ShareExtension";
+
 @implementation URBNShareKit
 
 @end

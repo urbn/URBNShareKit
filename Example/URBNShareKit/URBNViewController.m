@@ -24,7 +24,10 @@
 #pragma mark - Actions
 - (IBAction)shareButtonTouch:(id)sender {
     URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] init];
-    urbnActivityController.bodyProvider.defaultBody = @"";
+    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail]];
+    urbnActivityController.bodyProvider.defaultBody = @"whoohoo!";
+    urbnActivityController.bodyProvider.emailSubject = @"subject";
+    [self showViewController:urbnActivityController sender:self];
 }
 
 @end
