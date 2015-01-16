@@ -28,7 +28,12 @@
     return self;
 }
 
-- (void)setIncludedActivityTypes:(NSArray *)includedActivityTypesArray {
+
+/**
+ UIActivityViewController by default accepts a NSArray of excludedActivityTypes. This allows you to 
+    pass an array of included activity types. 
+ */
+ - (void)setIncludedActivityTypes:(NSArray *)includedActivityTypesArray {
     NSArray *activityTypesArray = @[UIActivityTypePostToFacebook,
                                UIActivityTypePostToTwitter,
                                UIActivityTypePostToWeibo,
@@ -43,7 +48,7 @@
                                UIActivityTypePostToVimeo,
                                UIActivityTypePostToTencentWeibo,
                                UIActivityTypeAirDrop,
-                               kActivityTypePinterest];
+                               kURBNActivityTypePinterest];
     
     NSMutableSet *typesSet = [NSMutableSet setWithArray:activityTypesArray];
     NSMutableSet *includedTypesSet = [NSMutableSet setWithArray:includedActivityTypesArray];

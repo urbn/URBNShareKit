@@ -25,7 +25,7 @@
 #pragma mark - Actions
 - (IBAction)shareButtonTouch:(id)sender {
     URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] init];
-    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kActivityTypePinterest]];
+    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest]];
     
     urbnActivityController.bodyProvider.subject = @"My E-Mail Subject";
     urbnActivityController.bodyProvider.emailBody = @"<html>The body of my e-mail which can contain <b>HTML <i>tags</i></b></html>";
@@ -33,14 +33,13 @@
     urbnActivityController.bodyProvider.facebookBody = @"Check out my Facebook post";
     urbnActivityController.bodyProvider.twitterBody = @"Tweet tweet";
     urbnActivityController.bodyProvider.textMessageBody = @"This is a great text message";
-    urbnActivityController.bodyProvider.pinterestBody = @"Pinning this to my board";
     
     urbnActivityController.imageProvider.activityTypesToDisplayImage = @[UIActivityTypeMail];
     urbnActivityController.imageProvider.image = [UIImage imageNamed:@"ron-swanson"];
     
     urbnActivityController.urlProvider.url = [NSURL URLWithString:@"http://www.google.com"];
     
-    [self showViewController:urbnActivityController sender:self];
+    [self presentViewController:urbnActivityController animated:YES completion:nil];
 }
 
 @end

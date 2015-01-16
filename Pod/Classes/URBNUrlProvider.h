@@ -10,7 +10,14 @@
 
 @interface URBNUrlProvider : UIActivityItemProvider
 
+/**
+ The Url you want attached to the share activities
+ */
 @property (nonatomic, strong) NSURL *url;
+
+/**
+ This array should contain the UIActivityTypes you want the Url attached to. See all types in URBNShareKit.h
+ */
 @property (nonatomic, strong) NSArray *activityTypesToDisplayUrl;
 
 @end

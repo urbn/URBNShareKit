@@ -32,9 +32,6 @@
         else if (activityType == UIActivityTypeCopyToPasteboard) {
             return self.pasteboardBody;
         }
-        else if (activityType == kActivityTypePinterest) {
-            return self.pinterestBody;
-        }
     }
     return nil;
 }
