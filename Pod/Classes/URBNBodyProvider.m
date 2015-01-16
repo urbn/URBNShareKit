@@ -29,9 +29,6 @@
         else if (activityType == UIActivityTypePostToTwitter) {
             return self.twitterBody;
         }
-        else if (activityType == UIActivityTypePostToTwitter) {
-            return self.twitterBody;
-        }
         else if (activityType == UIActivityTypeCopyToPasteboard) {
             return self.pasteboardBody;
         }
@@ -47,7 +44,7 @@
 }
 
 - (NSString *)activityViewController:(UIActivityViewController *)activityViewController subjectForActivityType:(NSString *)activityType {
-    return self.emailSubject;
+    return self.subject;
 }
 
 @end

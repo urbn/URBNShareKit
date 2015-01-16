@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSString *defaultBody;
 @property (nonatomic, strong) NSString *emailBody;
-@property (nonatomic, strong) NSString *emailSubject;
+@property (nonatomic, strong) NSString *subject;
 @property (nonatomic, strong) NSString *textMessageBody;
 @property (nonatomic, strong) NSString *twitterBody;
 @property (nonatomic, strong) NSString *facebookBody;

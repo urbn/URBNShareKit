@@ -6,6 +6,11 @@
 //  Copyright (c) 2014 Ryan Garchinsky. All rights reserved.
 //
 
+/*
+ * You will need to run this on a device to see all possible sharing activities. 
+ * The simulator does not support most Activity Types.
+*/
+
 #import "URBNShareKitExampleVC.h"
 #import <URBNShareKit/URBNShareKit.h>
 
@@ -17,16 +22,12 @@
 
 @implementation URBNShareKitExampleVC
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 #pragma mark - Actions
 - (IBAction)shareButtonTouch:(id)sender {
     URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] init];
     [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kActivityTypePinterest]];
     
-    urbnActivityController.bodyProvider.emailSubject = @"My E-Mail Subject";
+    urbnActivityController.bodyProvider.subject = @"My E-Mail Subject";
     urbnActivityController.bodyProvider.emailBody = @"<html>The body of my e-mail which can contain <b>HTML <i>tags</i></b></html>";
     urbnActivityController.bodyProvider.pasteboardBody = @"This was sent to my pasteboard";
     urbnActivityController.bodyProvider.facebookBody = @"Check out my Facebook post";
