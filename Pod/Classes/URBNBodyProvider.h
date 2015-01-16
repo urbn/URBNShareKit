@@ -16,7 +16,8 @@
 @interface URBNBodyProvider : UIActivityItemProvider
 
 /**
- If this is set, that text is used for all activity types and others are ignored
+ This text is used for all body properties that are not set, as well as
+    activitity types that are not handled 
  */
 @property (nonatomic, strong) NSString *defaultBody;
 

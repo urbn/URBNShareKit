@@ -28,7 +28,6 @@
     return self;
 }
 
-
 /**
  UIActivityViewController by default accepts a NSArray of excludedActivityTypes. This allows you to 
     pass an array of included activity types. 

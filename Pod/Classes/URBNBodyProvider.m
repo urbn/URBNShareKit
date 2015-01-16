@@ -12,26 +12,24 @@
 @implementation URBNBodyProvider
 
 - (id)activityViewController:(UIActivityViewController *)activityViewController itemForActivityType:(NSString *)activityType {
-    // If a defaultBody was set, use that for all copy
-    if (self.defaultBody) {
-        return self.defaultBody;
+    // Use the defaultBody for any body property not set, or an activity type not handled here
+    if (activityType == UIActivityTypeMail) {
+        return self.emailBody ? self.emailBody : self.defaultBody;
+    }
+    else if (activityType == UIActivityTypeMessage) {
+        return self.textMessageBody ? self.textMessageBody : self.defaultBody;
+    }
+    else if (activityType == UIActivityTypePostToFacebook) {
+        return self.facebookBody ? self.facebookBody : self.defaultBody;
+    }
+    else if (activityType == UIActivityTypePostToTwitter) {
+        return self.twitterBody ? self.twitterBody : self.defaultBody;
+    }
+    else if (activityType == UIActivityTypeCopyToPasteboard) {
+        return self.pasteboardBody ? self.pasteboardBody : self.defaultBody;
     }
     else {
-        if (activityType == UIActivityTypeMail) {
-            return self.emailBody;
-        }
-        else if (activityType == UIActivityTypeMessage) {
-            return self.textMessageBody;
-        }
-        else if (activityType == UIActivityTypePostToFacebook) {
-            return self.facebookBody;
-        }
-        else if (activityType == UIActivityTypePostToTwitter) {
-            return self.twitterBody;
-        }
-        else if (activityType == UIActivityTypeCopyToPasteboard) {
-            return self.pasteboardBody;
-        }
+        return self.defaultBody;
     }
     return nil;
 }
