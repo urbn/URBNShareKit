@@ -15,7 +15,7 @@
 @implementation URBNActivityViewController
 
 #pragma mark - Initilization
-- (instancetype)init {
+- (instancetype)initWithDefaultBody:(NSString *)defaultBody {
     URBNBodyProvider *bodyProvider = [URBNBodyProvider new];
     URBNUrlProvider *urlProvider = [URBNUrlProvider new];
     URBNImageProvider *imageProvider = [URBNImageProvider new];
@@ -24,6 +24,8 @@
         self.bodyProvider = bodyProvider;
         self.urlProvider = urlProvider;
         self.imageProvider = imageProvider;
+        
+        self.bodyProvider.defaultBody = defaultBody;
     }
     return self;
 }

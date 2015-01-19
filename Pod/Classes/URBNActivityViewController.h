@@ -35,4 +35,9 @@
  */
 @property (nonatomic, strong) NSArray *includedActivityTypes;
 
+/**
+ Initializer takes a defaultBody that will be used for any body text undefined
+ */
+- (instancetype)initWithDefaultBody:(NSString *)defaultBody;
+
 @end

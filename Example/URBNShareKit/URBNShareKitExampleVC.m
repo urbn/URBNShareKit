@@ -24,7 +24,7 @@
 
 #pragma mark - Actions
 - (IBAction)shareButtonTouch:(id)sender {
-    URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] init];
+    URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] initWithDefaultBody:@"This text will be set as the body for any activity types undefined by URBNShareKit, and for any support body texts you do not set below."];
     [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest]];
     
     urbnActivityController.bodyProvider.subject = @"My E-Mail Subject";
