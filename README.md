@@ -14,7 +14,7 @@ After adding URBNShareKit to your projects Podfile, import URBNShareKit using th
 
 To use URBNShareKit, create an instance of `URBNActivityViewController`, and init using the designated initializer `initWithDefaultBody:`
 
-See the example project for more setup code.
+See the [exmaple project](https://github.com/urbn/URBNShareKit/blob/master/Example/URBNShareKit/URBNShareKitExampleVC.m) for more setup code.
 
 URBNShareKit supports the following activity types:
 ```objective-c 
@@ -35,12 +35,15 @@ URBNShareKit supports the following activity types:
  NSString *const kURBNActivityTypePinterest;
 ```
 
-Supported UIActivityItemProvider types:
-```
-URBNBodyProvider
-URBNImageProvider
-URBNUrlProvider
-```
+Supported UIActivityItemProvider types:<br>
+
+##### URBNBodyProvider<br>
+Pass this provider body text to share. You can set different body text for different activity types. See [URBNBodyProvider.h](https://github.com/urbn/URBNShareKit/blob/master/Pod/Classes/URBNBodyProvider.h) for more info on supported body types.<br>
+##### URBNImageProvider<br>
+Pass this provider an image that will be shared with supported activity types.<br>
+##### URBNUrlProvider<br>
+Pass this provider a Url that will be shared with supported activity types.<br>
+
 ## Requirements
 
 - iOS 7+
