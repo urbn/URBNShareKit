@@ -7,4 +7,4 @@ install:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 script:
-- xctool test -workspace Example/URBNShareKit.xcworkspace -scheme URBNShareKit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool test -workspace Example/URBNShareKit.xcworkspace -scheme URBNShareKit-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
