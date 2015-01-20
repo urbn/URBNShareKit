@@ -1,13 +1,13 @@
-# URBNShareKit
-
-[![CI Status](http://img.shields.io/travis/Ryan Garchinsky/URBNShareKit.svg?style=flat)](https://travis-ci.org/urbn/URBNShareKit)
+[![CI Status](http://img.shields.io/travis/urbn/URBNShareKit.svg?style=flat)](https://travis-ci.org/urbn/URBNShareKit)
 [![Version](https://img.shields.io/cocoapods/v/URBNShareKit.svg?style=flat)](http://cocoadocs.org/docsets/URBNShareKit)
 [![License](https://img.shields.io/cocoapods/l/URBNShareKit.svg?style=flat)](http://cocoadocs.org/docsets/URBNShareKit)
 [![Platform](https://img.shields.io/cocoapods/p/URBNShareKit.svg?style=flat)](http://cocoadocs.org/docsets/URBNShareKit)
 
-## Usage
+# URBNShareKit
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+A subclass of UIActivityViewController which makes sharing content using the native iOS share sheet a breeze. 
+
+## Usage
 
 ## Requirements
 
