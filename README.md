@@ -9,7 +9,35 @@ A subclass of UIActivityViewController which makes sharing content using the nat
 
 ## Usage
 
+After adding URBNShareKit to your projects Podfile, import URBNShareKit using the following import line:<br>
+`#import <URBNShareKit/URBNShareKit.h>`
+
+To use URBNShareKit, create an instance of `URBNActivityViewController`, and init using the designated initializer `initWithDefaultBody:`
+
+See the example project for more setup code.
+
+URBNShareKit supports the following activity types:
+```objective-c 
+ NSString *const UIActivityTypePostToFacebook;
+ NSString *const UIActivityTypePostToTwitter;
+ NSString *const UIActivityTypePostToWeibo;
+ NSString *const UIActivityTypeMessage;
+ NSString *const UIActivityTypeMail;
+ NSString *const UIActivityTypePrint;
+ NSString *const UIActivityTypeCopyToPasteboard;
+ NSString *const UIActivityTypeAssignToContact;
+ NSString *const UIActivityTypeSaveToCameraRoll;
+ NSString *const UIActivityTypeAddToReadingList;
+ NSString *const UIActivityTypePostToFlickr;
+ NSString *const UIActivityTypePostToVimeo;
+ NSString *const UIActivityTypePostToTencentWeibo;
+ NSString *const UIActivityTypeAirDrop;
+ NSString *const kURBNActivityTypePinterest;
+```
 ## Requirements
+
+- iOS 7+
+- Note: 3rd party activity types (ie Pinterest) will only work on devices with iOS 8+.  
 
 ## Installation
 
