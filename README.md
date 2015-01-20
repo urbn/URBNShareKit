@@ -34,6 +34,13 @@ URBNShareKit supports the following activity types:
  NSString *const UIActivityTypeAirDrop;
  NSString *const kURBNActivityTypePinterest;
 ```
+
+Supported UIActivityItemProvider types:
+```
+URBNBodyProvider
+URBNImageProvider
+URBNUrlProvider
+```
 ## Requirements
 
 - iOS 7+
