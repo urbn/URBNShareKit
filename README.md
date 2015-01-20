@@ -1,6 +1,6 @@
 # URBNShareKit
 
-[![CI Status](http://img.shields.io/travis/Ryan Garchinsky/URBNShareKit.svg?style=flat)](https://travis-ci.org/Ryan Garchinsky/URBNShareKit)
+[![CI Status](http://img.shields.io/travis/Ryan Garchinsky/URBNShareKit.svg?style=flat)](https://travis-ci.org/urbn/URBNShareKit)
 [![Version](https://img.shields.io/cocoapods/v/URBNShareKit.svg?style=flat)](http://cocoadocs.org/docsets/URBNShareKit)
 [![License](https://img.shields.io/cocoapods/l/URBNShareKit.svg?style=flat)](http://cocoadocs.org/docsets/URBNShareKit)
 [![Platform](https://img.shields.io/cocoapods/p/URBNShareKit.svg?style=flat)](http://cocoadocs.org/docsets/URBNShareKit)
@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Ryan Garchinsky, ryang1428@gmail.com
+URBN Mobile Team, mobileteam@urbn.com
 
 ## License
 
