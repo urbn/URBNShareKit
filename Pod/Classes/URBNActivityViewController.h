@@ -38,6 +38,6 @@
 /**
  Initializer takes a defaultBody that will be used for any body text undefined
  */
-- (instancetype)initWithDefaultBody:(NSString *)defaultBody;
+- (instancetype)initWithDefaultBody:(NSString *)defaultBody NS_DESIGNATED_INITIALIZER;
 
 @end
