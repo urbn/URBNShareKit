@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "URBNShareKit"
   s.version          = "0.1"
-  s.summary          = "URBNShareKit makes using the UIActivityViewController to share content a breeze."
+  s.summary          = "URBNShareKit makes using the UIActivityViewController to share content a breeze. iOS 7+"
   s.homepage         = "https://github.com/urbn/URBNShareKit"
   s.license          = 'MIT'
   s.author           = { "urbn" => "jgrandelli@urbn.com" }
