@@ -36,6 +36,7 @@
 #import "URBNUrlProvider.h"
 
 extern NSString *const kURBNActivityTypePinterest;
+extern NSString *const kURBNActivityTypeOpenInSafari;
 
 @interface URBNShareKit : NSObject
 

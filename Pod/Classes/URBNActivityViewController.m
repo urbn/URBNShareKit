@@ -7,6 +7,7 @@
 //
 
 #import "URBNActivityViewController.h"
+#import "URBNSafariActivity.h"
 
 @implementation URBNActivityViewController
 
@@ -16,7 +17,7 @@
     URBNBodyProvider *bodyProvider = [URBNBodyProvider new];
     URBNUrlProvider *urlProvider = [URBNUrlProvider new];
     URBNImageProvider *imageProvider = [URBNImageProvider new];
-    self = [super initWithActivityItems:@[bodyProvider, urlProvider, imageProvider] applicationActivities:nil];
+    self = [super initWithActivityItems:@[bodyProvider, urlProvider, imageProvider] applicationActivities:@[[[URBNSafariActivity alloc] initWithURL:urlProvider.url]]];
     if (self) {
         self.bodyProvider = bodyProvider;
         self.bodyProvider.defaultBody = defaultBody;
@@ -41,6 +42,8 @@
     pass an array of included activity types. 
  */
  - (void)setIncludedActivityTypes:(NSArray *)includedActivityTypesArray {
+
+
     NSArray *activityTypesArray = @[UIActivityTypePostToFacebook,
                                UIActivityTypePostToTwitter,
                                UIActivityTypePostToWeibo,
@@ -55,12 +58,13 @@
                                UIActivityTypePostToVimeo,
                                UIActivityTypePostToTencentWeibo,
                                UIActivityTypeAirDrop,
-                               kURBNActivityTypePinterest];
+                               kURBNActivityTypePinterest,
+                               kURBNActivityTypeOpenInSafari];
     
     NSMutableSet *typesSet = [NSMutableSet setWithArray:activityTypesArray];
     NSMutableSet *includedTypesSet = [NSMutableSet setWithArray:includedActivityTypesArray];
     [typesSet minusSet:includedTypesSet];
-    
+     
     self.excludedActivityTypes = typesSet.allObjects;
 }
 
