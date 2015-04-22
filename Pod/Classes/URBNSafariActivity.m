@@ -41,7 +41,7 @@
 }
 
 - (UIImage *)activityImage {
-    
+    return [UIImage imageNamed:@"SafariIcon"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
