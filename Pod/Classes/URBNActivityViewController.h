@@ -49,17 +49,7 @@
  *
  *  @return
  */
-- (instancetype)initWithDefaultBody:(NSString *)defaultBody;
 
-/**
- *  Initalizer used when sharing a URL and displaying the `Open In Safari` option on the share sheet
- *
- *  @param defaultBody     Body text used for all activities, unless they are set explicity after initialization
- *  @param url             The url you wish to share
- *  @param canOpenInSafari Whether you wish to display the `Open In Safari` option or not
- *
- *  @return
- */
 - (instancetype)initWithDefaultBody:(NSString *)defaultBody url:(NSURL *)url canOpenInSafari:(BOOL)canOpenInSafari NS_DESIGNATED_INITIALIZER;
 
 @end
