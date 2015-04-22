@@ -41,7 +41,7 @@
 }
 
 - (UIImage *)activityImage {
-    return [UIImage imageNamed:@"SafariIcon"];
+    return [UIImage imageNamed:@"URBNShareKit.bundle/safari-white"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
