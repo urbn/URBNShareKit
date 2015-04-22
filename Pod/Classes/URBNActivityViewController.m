@@ -12,6 +12,7 @@
 @interface URBNActivityViewController()
 
 @property (nonatomic, assign) BOOL canOpenInSafari;
+@property (nonatomic, strong) URBNSafariActivity *safariActivity;
 
 @end
 
@@ -30,8 +31,8 @@
     URBNBodyProvider *bodyProvider = [URBNBodyProvider new];
     URBNUrlProvider *urlProvider = [URBNUrlProvider new];
     URBNImageProvider *imageProvider = [URBNImageProvider new];
-    URBNSafariActivity *safariActivity = canOpenInSafari ? [[URBNSafariActivity alloc] initWithURL:url] : nil;
-    NSArray *applicationActivities = safariActivity ? @[safariActivity] : nil;
+    self.safariActivity = canOpenInSafari ? [[URBNSafariActivity alloc] initWithURL:url] : nil;
+    NSArray *applicationActivities = self.safariActivity ? @[self.safariActivity] : nil;
     
     self = [super initWithActivityItems:@[bodyProvider, urlProvider, imageProvider] applicationActivities:applicationActivities];
     if (self) {
@@ -54,6 +55,10 @@
 
 - (instancetype)init {
     return [self initWithDefaultBody:nil];
+}
+
+- (void)setOpenInSafariActivtyImage:(UIImage *)openInSafariImage {
+    self.safariActivity.safariActivityImage = openInSafariImage;
 }
 
 #pragma mark - Methods

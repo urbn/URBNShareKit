@@ -41,6 +41,10 @@
 }
 
 - (UIImage *)activityImage {
+    if (self.safariActivityImage) {
+        return self.safariActivityImage;
+    }
+    
     return [UIImage imageNamed:@"URBNShareKit.bundle/safari-white"];
 }
 

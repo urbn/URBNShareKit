@@ -37,6 +37,12 @@
 @property (nonatomic, strong) NSArray *includedActivityTypes;
 
 /**
+ *  This image will override the default Safari Activity Image
+ */
+
+@property (nonatomic, strong) UIImage *openInSafariActivtyImage;
+
+/**
  *  Standard initializer used to create a URBNActivityViewController
  *
  *  @param defaultBody Body text used for all activities, unless they are set explicity after initialization

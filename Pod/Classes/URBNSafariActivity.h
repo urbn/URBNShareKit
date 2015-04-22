@@ -10,6 +10,8 @@
 
 @interface URBNSafariActivity : UIActivity
 
+@property (nonatomic, strong) UIImage *safariActivityImage;
+
 - (instancetype)initWithURL:(NSURL *)URL;
 
 @end
