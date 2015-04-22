@@ -26,8 +26,7 @@
 - (IBAction)shareButtonTouch:(id)sender {
     URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] initWithDefaultBody:@"This text will be set as the body for any activity types undefined by URBNShareKit, and for any support body texts you do not set below."];
     
-    
-    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest, kURBNActivityTypeOpenInSafari]];
+    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest]];
     
     urbnActivityController.bodyProvider.subject = @"My E-Mail Subject";
     urbnActivityController.bodyProvider.emailBody = @"<html>The body of my e-mail which can contain <b>HTML <i>tags</i></b></html>";
@@ -40,6 +39,19 @@
     urbnActivityController.imageProvider.image = [UIImage imageNamed:@"ron-swanson"];
     
     urbnActivityController.urlProvider.url = [NSURL URLWithString:@"http://www.google.com"];
+    
+    [self presentViewController:urbnActivityController animated:YES completion:nil];
+}
+
+- (IBAction)shareUrlButtonTouched:(id)sender {
+    URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] initWithDefaultBody:@"Testing" url:[NSURL URLWithString:@"http://www.google.com"] canOpenInSafari:YES];
+    
+    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest]];
+    
+    urbnActivityController.imageProvider.activityTypesToDisplayImage = @[UIActivityTypeMail];
+    urbnActivityController.imageProvider.image = [UIImage imageNamed:@"ron-swanson"];
+    
+    //urbnActivityController.urlProvider.url = [NSURL URLWithString:@"http://www.google.com"];
     
     [self presentViewController:urbnActivityController animated:YES completion:nil];
 }

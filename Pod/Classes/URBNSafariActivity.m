@@ -40,6 +40,10 @@
     return NSLocalizedString(@"Open in Safari", nil);
 }
 
+- (UIImage *)activityImage {
+    
+}
+
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     return YES; 
 }
