@@ -29,7 +29,7 @@
     [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest]];
     
     urbnActivityController.bodyProvider.subject = @"My E-Mail Subject";
-    urbnActivityController.bodyProvider.emailBody = @"<html>The body of my e-mail which can contain <b>HTML <i>tags</i></b></html>";
+    urbnActivityController.bodyProvider.emailBody = @"The body of the e-mail can contains HTML tags if you wrap them within HTML tags, doing so will hide the URL you are trying to share though.";
     urbnActivityController.bodyProvider.pasteboardBody = @"This was sent to my pasteboard";
     urbnActivityController.bodyProvider.facebookBody = @"Check out my Facebook post";
     urbnActivityController.bodyProvider.twitterBody = @"Tweet tweet";
