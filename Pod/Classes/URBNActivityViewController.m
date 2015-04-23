@@ -19,12 +19,6 @@
 @implementation URBNActivityViewController
 
 #pragma mark - Initilization
-- (instancetype)initWithDefaultBody:(NSString *)defaultBody {
-    self = [self initWithDefaultBody:defaultBody url:nil canOpenInSafari:NO];
-    
-    return self;
-}
-
 - (instancetype)initWithDefaultBody:(NSString *)defaultBody url:(NSURL *)url canOpenInSafari:(BOOL)canOpenInSafari {
     NSAssert(defaultBody, @"You must pass a non-nil defaultBody. Please use the initWithDefaultBody: initalizer and ensure the passed text is not nil");
 
@@ -50,11 +44,11 @@
 }
 
 - (instancetype)initWithActivityItems:(NSArray *)activityItems applicationActivities:(NSArray *)applicationActivities {
-    return [self initWithDefaultBody:nil];
+    return [self initWithDefaultBody:nil url:nil canOpenInSafari:NO];
 }
 
 - (instancetype)init {
-    return [self initWithDefaultBody:nil];
+    return [self initWithDefaultBody:nil url:nil canOpenInSafari:NO];
 }
 
 - (void)setOpenInSafariActivtyImage:(UIImage *)openInSafariImage {

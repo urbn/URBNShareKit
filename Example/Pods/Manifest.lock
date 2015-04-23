@@ -1,5 +1,5 @@
 PODS:
-  - URBNShareKit (0.1)
+  - URBNShareKit (0.2)
 
 DEPENDENCIES:
   - URBNShareKit (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  URBNShareKit: 9af48cd513b29e4ea28c043331551faf2cfd63e6
+  URBNShareKit: 1fd4732c6415d71199b5d44ebee5b8a0349a08a3
 
 COCOAPODS: 0.36.3

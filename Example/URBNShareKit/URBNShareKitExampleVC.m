@@ -24,7 +24,7 @@
 
 #pragma mark - Actions
 - (IBAction)shareButtonTouch:(id)sender {
-    URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] initWithDefaultBody:@"This text will be set as the body for any activity types undefined by URBNShareKit, and for any support body texts you do not set below." url:nil canOpenInSafari:NO];
+    URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] initWithDefaultBody:@"This text will be set as the body for any activity types undefined by URBNShareKit, and for any support body texts you do not set below." url:[NSURL URLWithString:@"http://www.google.com"] canOpenInSafari:NO];
     
     [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest]];
     
@@ -37,9 +37,7 @@
     
     urbnActivityController.imageProvider.activityTypesToDisplayImage = @[UIActivityTypeMail];
     urbnActivityController.imageProvider.image = [UIImage imageNamed:@"ron-swanson"];
-    
-    urbnActivityController.urlProvider.url = [NSURL URLWithString:@"http://www.google.com"];
-    
+        
     [self presentViewController:urbnActivityController animated:YES completion:nil];
 }
 
