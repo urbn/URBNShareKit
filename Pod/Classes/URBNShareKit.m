@@ -9,6 +9,7 @@
 #import "URBNShareKit.h"
 
 NSString *const kURBNActivityTypePinterest = @"pinterest.ShareExtension";
+NSString *const kURBNActivityTypeOpenInSafari = @"openInSafari.ShareExtension";
 
 @implementation URBNShareKit
 

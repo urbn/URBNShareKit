@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -28,11 +28,26 @@
                                     <action selector="shareButtonTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6tO-0V-rDw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="579-Tu-47l">
+                                <rect key="frame" x="52" y="213" width="497" height="91"/>
+                                <color key="backgroundColor" red="0.19590510110000001" green="0.59165513930000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Share Url">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareUrlButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yoz-Fd-ICH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="579-Tu-47l" secondAttribute="trailing" constant="35" id="Gw3-Jy-XBt"/>
+                            <constraint firstItem="579-Tu-47l" firstAttribute="height" secondItem="3BK-iE-egg" secondAttribute="height" id="X4c-wv-Ea7"/>
                             <constraint firstItem="3BK-iE-egg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="dOp-5K-w0b"/>
+                            <constraint firstItem="579-Tu-47l" firstAttribute="top" secondItem="3BK-iE-egg" secondAttribute="bottom" constant="56" id="kW4-3U-KKn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3BK-iE-egg" secondAttribute="trailing" constant="35" id="oGh-Uz-HJZ"/>
+                            <constraint firstItem="579-Tu-47l" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="q2P-TD-8hF"/>
                             <constraint firstItem="3BK-iE-egg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="46" id="wX9-gi-V6I"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3BK-iE-egg" secondAttribute="bottom" constant="443" id="xlP-8h-Bc5"/>
                         </constraints>
@@ -43,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="633.75" y="381.33802816901408"/>
+            <point key="canvasLocation" x="633" y="381"/>
         </scene>
     </scenes>
 </document>
