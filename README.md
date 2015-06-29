@@ -7,6 +7,9 @@
 
 A subclass of UIActivityViewController which makes sharing content using the native iOS share sheet a breeze. 
 
+## iOS 8.3 Facebook Change
+As of iOS 8.3, you can no longer supply 'body' text to the Facebook activity. See more [here](http://stackoverflow.com/a/30020929/480415). You can still supply a link and an image though.
+
 ## Usage
 
 After adding URBNShareKit to your projects Podfile, import URBNShareKit using the following import line:<br>
