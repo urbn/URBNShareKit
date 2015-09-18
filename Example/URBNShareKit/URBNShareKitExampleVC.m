@@ -44,7 +44,7 @@
 - (IBAction)shareUrlButtonTouched:(id)sender {
     URBNActivityViewController *urbnActivityController = [[URBNActivityViewController alloc] initWithDefaultBody:@"Testing" url:[NSURL URLWithString:@"http://www.urbanoutfitters.com/"] canOpenInSafari:YES];
     
-    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest]];
+    [urbnActivityController setIncludedActivityTypes:@[UIActivityTypeCopyToPasteboard, UIActivityTypeMail, UIActivityTypeMessage, UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, kURBNActivityTypePinterest, UIActivityTypeAddToReadingList]];
     
     urbnActivityController.imageProvider.activityTypesToDisplayImage = @[UIActivityTypeMail];
     urbnActivityController.imageProvider.image = [UIImage imageNamed:@"ron-swanson"];

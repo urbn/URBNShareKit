@@ -11,7 +11,6 @@
 
 @class URBNImageProvider;
 @class URBNBodyProvider;
-@class URBNUrlProvider;
 
 @interface URBNActivityViewController : UIActivityViewController
 
@@ -24,11 +23,6 @@
  Created on init. Set image to be shared before presenting
  */
 @property (nonatomic, strong) URBNImageProvider *imageProvider;
-
-/**
- Created on init. Set url to be shared before presenting
- */
-@property (nonatomic, strong) URBNUrlProvider *urlProvider;
 
 /**
  This array should contain the UIActivityTypes the share sheet will support

@@ -33,7 +33,6 @@
 #import "URBNActivityViewController.h"
 #import "URBNBodyProvider.h"
 #import "URBNImageProvider.h"
-#import "URBNUrlProvider.h"
 
 extern NSString *const kURBNActivityTypePinterest;
 extern NSString *const kURBNActivityTypeOpenInSafari;
