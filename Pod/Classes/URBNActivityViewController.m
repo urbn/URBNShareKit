@@ -23,18 +23,19 @@
     NSAssert(defaultBody, @"You must pass a non-nil defaultBody. Please use the initWithDefaultBody: initalizer and ensure the passed text is not nil");
 
     URBNBodyProvider *bodyProvider = [[URBNBodyProvider alloc] initWithPlaceholderItem:[NSString string]];
-    URBNUrlProvider *urlProvider = [[URBNUrlProvider alloc] initWithPlaceholderItem:[NSURL new]];
     URBNImageProvider *imageProvider = [[URBNImageProvider alloc] initWithPlaceholderItem:[UIImage new]];
     self.safariActivity = canOpenInSafari ? [[URBNSafariActivity alloc] initWithURL:url] : nil;
     NSArray *applicationActivities = self.safariActivity ? @[self.safariActivity] : nil;
 
-    self = [super initWithActivityItems:@[bodyProvider, urlProvider, imageProvider] applicationActivities:applicationActivities];
+    NSMutableArray *activityItems = [@[bodyProvider, imageProvider] mutableCopy];
+    if (url) {
+        [activityItems addObject:url];
+    }
+    
+    self = [super initWithActivityItems:activityItems applicationActivities:applicationActivities];
     if (self) {
         self.bodyProvider = bodyProvider;
         self.bodyProvider.defaultBody = defaultBody;
-
-        self.urlProvider = urlProvider;
-        self.urlProvider.url = url;
         self.imageProvider = imageProvider;
 
         self.canOpenInSafari = canOpenInSafari;

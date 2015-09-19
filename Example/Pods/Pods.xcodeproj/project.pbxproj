@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A370CF8A9CE7C305013867C /* URBNSafariActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B542AD854461F58CCA3CDD7 /* URBNSafariActivity.h */; };
-		0AA463429146327A072219AE /* URBNUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C10CF856C00340404D278BB /* URBNUrlProvider.m */; };
 		0BFF4272C14B13731249779B /* URBNImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8F863232EBE1DE5F4312D /* URBNImageProvider.m */; };
 		0E43A26B796CD0599CFDDC34 /* URBNShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E738414FFA8B4D053EA6BD1 /* URBNShareKit.m */; };
 		11A588B72B91F9C3E6B534F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E212937A7213E526524978 /* Foundation.framework */; };
-		192622574A8638119A600E11 /* URBNUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C10CF856C00340404D278BB /* URBNUrlProvider.m */; };
 		205A036235B991D4F2C9C655 /* safari-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4126205D5565829A65743B42 /* safari-white.png */; };
 		2F7EBA3F95E0F25566D37B4E /* safari-white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51DBB8D25CCD17CCCE5D91B0 /* safari-white@3x.png */; };
 		396FE37593C7C3FBF88605A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E212937A7213E526524978 /* Foundation.framework */; };
@@ -33,9 +31,7 @@
 		8AD4E1E373816722A1B45D5A /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DA0193994ECB98280C2DFDFF /* en.lproj */; };
 		8B4D9416234AF3628346EB34 /* safari-white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51DBB8D25CCD17CCCE5D91B0 /* safari-white@3x.png */; };
 		8E0EC3B1BE09214DB2EF889B /* URBNImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8F863232EBE1DE5F4312D /* URBNImageProvider.m */; };
-		8F1AEDA840E6681B9AD0CEB6 /* URBNUrlProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C7953E0941C87820D99A822C /* URBNUrlProvider.h */; };
 		999555A017E99A7EBF5C7E4C /* Pods-Tests-URBNShareKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1661FEFBA4E5C7838DE7B10 /* Pods-Tests-URBNShareKit-dummy.m */; };
-		9CCAE6A6A083257C190043E2 /* URBNUrlProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C7953E0941C87820D99A822C /* URBNUrlProvider.h */; };
 		9E4CA423D41AC0C42BD6D426 /* URBNActivityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B84F7B87ABF0B800126E0BCD /* URBNActivityViewController.h */; };
 		A7EBBC54203F0DF1972C1726 /* URBNActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E65D90C549257E10D73301 /* URBNActivityViewController.m */; };
 		B1BDABE4FCD46F85493C3681 /* URBNImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C1198EFA0B7642712EF870 /* URBNImageProvider.h */; };
@@ -90,7 +86,6 @@
 		1F2055FC278303A0A5FD7829 /* Pods-URBNShareKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBNShareKit.release.xcconfig"; sourceTree = "<group>"; };
 		24E2B2959B62A6FDCEAF13BD /* Pods-URBNShareKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URBNShareKit-resources.sh"; sourceTree = "<group>"; };
 		27664E3F3C2CA57AEB85E37D /* libPods-URBNShareKit-URBNShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNShareKit-URBNShareKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C10CF856C00340404D278BB /* URBNUrlProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNUrlProvider.m; sourceTree = "<group>"; };
 		2F41D2394213D598037D22A4 /* libPods-Tests-URBNShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-URBNShareKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A6FEB4DB93E41A8ACD53DC /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
 		36DB73F411C8E6FA64390F27 /* Pods-URBNShareKit-URBNShareKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-URBNShareKit-URBNShareKit-prefix.pch"; path = "../Pods-URBNShareKit-URBNShareKit/Pods-URBNShareKit-URBNShareKit-prefix.pch"; sourceTree = "<group>"; };
@@ -119,7 +114,6 @@
 		B84F7B87ABF0B800126E0BCD /* URBNActivityViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNActivityViewController.h; sourceTree = "<group>"; };
 		B8D0040DE101226D5668C08A /* Pods-Tests-URBNShareKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-URBNShareKit-Private.xcconfig"; sourceTree = "<group>"; };
 		BB3AAC520EDA2660D86ABDA2 /* Pods-URBNShareKit-URBNShareKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNShareKit-URBNShareKit.xcconfig"; path = "../Pods-URBNShareKit-URBNShareKit/Pods-URBNShareKit-URBNShareKit.xcconfig"; sourceTree = "<group>"; };
-		C7953E0941C87820D99A822C /* URBNUrlProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNUrlProvider.h; sourceTree = "<group>"; };
 		CBCF5BFBC9CC17FF0DB621B7 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1469819111DD6AF2BB93246 /* Pods-URBNShareKit-URBNShareKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-URBNShareKit-URBNShareKit-dummy.m"; path = "../Pods-URBNShareKit-URBNShareKit/Pods-URBNShareKit-URBNShareKit-dummy.m"; sourceTree = "<group>"; };
 		D78696A23171943299C527A4 /* safari-white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "safari-white@2x.png"; sourceTree = "<group>"; };
@@ -200,8 +194,6 @@
 				1E71D870EAC85E97254B0D1F /* URBNSafariActivity.m */,
 				8BD54CCE85B2FDE05A953745 /* URBNShareKit.h */,
 				1E738414FFA8B4D053EA6BD1 /* URBNShareKit.m */,
-				C7953E0941C87820D99A822C /* URBNUrlProvider.h */,
-				2C10CF856C00340404D278BB /* URBNUrlProvider.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -359,7 +351,6 @@
 				FE52285AB01B5C521180002A /* URBNImageProvider.h in Headers */,
 				0A370CF8A9CE7C305013867C /* URBNSafariActivity.h in Headers */,
 				88B0BE60A7C238BB4C06331A /* URBNShareKit.h in Headers */,
-				8F1AEDA840E6681B9AD0CEB6 /* URBNUrlProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +363,6 @@
 				B1BDABE4FCD46F85493C3681 /* URBNImageProvider.h in Headers */,
 				4496DFB7EBE52F03B1963FB0 /* URBNSafariActivity.h in Headers */,
 				E3DC1ED85814BBCA1852C810 /* URBNShareKit.h in Headers */,
-				9CCAE6A6A083257C190043E2 /* URBNUrlProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +539,6 @@
 				8E0EC3B1BE09214DB2EF889B /* URBNImageProvider.m in Sources */,
 				87B5B021BCC0D27D6227F9C1 /* URBNSafariActivity.m in Sources */,
 				0E43A26B796CD0599CFDDC34 /* URBNShareKit.m in Sources */,
-				0AA463429146327A072219AE /* URBNUrlProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,7 +559,6 @@
 				0BFF4272C14B13731249779B /* URBNImageProvider.m in Sources */,
 				FE1D73B91EE7AC170D0D778C /* URBNSafariActivity.m in Sources */,
 				DB579D03C7D428D1FA9B0506 /* URBNShareKit.m in Sources */,
-				192622574A8638119A600E11 /* URBNUrlProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
