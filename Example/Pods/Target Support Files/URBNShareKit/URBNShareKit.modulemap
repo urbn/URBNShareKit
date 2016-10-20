@@ -1,0 +1,6 @@
+framework module URBNShareKit {
+  umbrella header "URBNShareKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
