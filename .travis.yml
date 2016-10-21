@@ -1,10 +1,9 @@
-# reference: http://www.objc.io/issue-6/travis-ci.html
-
+osx_image: xcode8
 language: objective-c
 
-# before_install: cd Example && pod install && cd -
-install:
-- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+before_install:
+ - sudo gem install cocoapods -v '1.1.1'
+ - cd Example && rm -rf Pods && rm -rf Podfile.lock && pod install && cd -
 
 script:
-- xctool test -workspace Example/URBNShareKit.xcworkspace -scheme URBNShareKit-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xcodebuild -workspace Example/URBNShareKit.xcworkspace -scheme URBNShareKit-Example clean build -destination "platform=iOS Simulator,name=iPhone 6,OS=latest" -destination-timeout 120 test
