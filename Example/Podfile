@@ -1,11 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'URBNShareKit', :exclusive => true do
-  pod "URBNShareKit", :path => "../"
+platform :ios, '8.0'
+use_frameworks!
+
+target 'URBNShareKit' do
+    target 'Tests' do
+    inherit! :search_paths
+    end 
 end
 
-target 'Tests', :exclusive => true do
-  pod "URBNShareKit", :path => "../"
 
-  
-end
+pod "URBNShareKit", :path => "../"
